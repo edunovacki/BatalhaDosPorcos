@@ -188,6 +188,7 @@ body::before {
     padding: 50px 0;
     margin-top: 20px;
     flex: 1;
+    margin-bottom: 20px;
 
     h1 {
         text-align: center;
