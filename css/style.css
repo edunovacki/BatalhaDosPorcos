@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Arial;
+    font-size: 18px;
+    background: url(../images/Fundo.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    .header-logo {
+        img {
+            height: 80px;
+        }
+    }
+    .header-menu {
+        border: 1px solid white;
+        color: white;
+        float: right;
+        font-size: 2em;
+        padding: 10px;
+        margin: 10px;
+    }
+    .header-nav {
+        border: 1px solid white;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        display: none;
+        ul {
+            list-style: none;
+            li {
+                padding: 10px;
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }    
+}
+
+.banner-mobile {
+    text-align: center;
+    padding-bottom: 35px;
+    h1 {
+        color: white;
+        background-color: rgb(41, 40, 40);
+        padding: 20px;
+    }
+    img {
+        width: 100%;
+    }
+    .banner-img {
+        margin: 20px;
+        width: 80%;
+    }
+}
+
+.banner-desktop {
+    display: none;
+    a:hover {
+        background-color: rgb(185, 11, 11);
+        transition: 0.5s;
+    }
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flex {
+    .col {
+        text-align: center;
+        img {
+            width: 100%;
+        }     
+        p {
+            margin: 30px;
+            color: white;
+        }  
+    }
+}
+
+.personagens {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex: 1;
+    h1 {
+        color: white;
+        text-align: center;
+        margin: 30px;
+    }
+}
+
+.personagens .col {
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+    .jogador {
+        text-align: center;
+        margin: 20px auto;
+        width: 110px;
+        
+        p {
+            font-weight: bold;
+            font-size: 22px;
+        }
+    }
+    .porco {
+        text-align: center;
+        margin: 20px auto;
+        p {
+            font-weight: bold;
+            font-size: 22px;
+            width: 70px;
+        }
+    }
+}
+
+.personagens .flex {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.historia {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex: 1;
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    .flex {
+        .col {
+            p {
+                color: white;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+
+.contato {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex: 1;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        margin: 30px;
+        margin-bottom: 40px;
+    }
+     p {
+            color: white;
+            margin: 30px;
+    }
+
+    
+    form {
+        text-align: center;
+        margin-bottom: 50px;
+        label {
+            margin: 5px 0;
+            color: white;
+
+        }
+        input, textarea {
+            width: 40%;
+            border: 1px solid #CCC;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: red;
+            color: #FFF;
+            padding: 10px 20px;
+            border: 0;
+            margin: 10px;
+        }
+    }
+
+    iframe {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+}
+
+.footer {
+    text-align: center;
+    background-color: rgba(53, 52, 52, 0.8);
+    color: #FFF;
+    padding: 30px 0;
+    width: 100%;
+
+    p {
+        margin: 25px;
+    }
+    a {
+        color: #CCC;
+        font-size: 2em;
+        margin: 20px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: red;
+    }
+    img {
+        width: 50px;
+    }
+}
+
+.desktop {
+    display: none;
+}
+
+html, body {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* regra para telas maiores que 1000px*/
+
+@media (min-width: 1000px) {
+    .desktop {
+        display: block;
+    }
+    .header {
+        .header-menu {
+            display: none;
+        }
+        .header-nav {
+            display: block;
+            float: right;
+            border: 0;
+            ul {
+                li {
+                    display: inline-block;
+                    a:hover {
+                        color: white;
+                        border-bottom: 5px solid red;
+                        padding-bottom: 28px;
+                    }
+                    a {
+                        padding: 27px;
+                    }
+                }
+            }
+        }
+    }
+    .banner-mobile {
+        display: none;
+    }
+    .banner-desktop {
+        display: block;
+        width: 100%;
+        height: 700px;
+        background: url(../images/Jogo2.png) center;
+        background-size: cover;
+        .flex {
+            .col {
+                padding-top: 200px;
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+
+    .personagens .col {
+        width: 200px; 
+        text-align: center;
+        .jogador {
+            margin-top: 23px;
+            width: 230px;
+            p {
+                margin-left: 69px;
+                font-weight: bold;
+                font-size: 22px;
+                margin-top: 25px;
+            }
+        }
+        .porco {
+            p {
+                font-weight: bold;
+                font-size: 22px;
+            }
+        }
+    }
+    .personagens .flex {
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start;
+        gap: 200px;
+        flex-wrap: wrap;
+    }
+    
+    main {
+        flex: 1;
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+            margin-bottom: 30px;
+        }
+        p {
+            margin: 30px;
+        }
+    }
+
+}/* final da regra */

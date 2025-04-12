@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha dos Porcos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/Jogador_Logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" title="Home"
+            class="header-logo">
+                <img src="images/Jogador_Logo.png" alt="Jogador_Logo">
+            </a>
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="personagens.html" title="Personagens">Personagens</a>
+                    </li>
+                    <li>
+                        <a href="historia.html" title="Historia">História</a>
+                    </li>
+                    <li class="desktop">
+                        <a href="jogo.html" title="Jogo">Jogo</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+<section class="banner-mobile">
+    <h1>Batalha dos Porcos</h1>
+    <img src="images/Jogo2.png" alt="Batalha dos Porcos">
+</section>
+
+<section class="banner-desktop">
+    <div class="container">
+        <div class="flex">
+            <div class="col" data-aos="flip-left">
+                <h1>Batalha dos Porcos</h1>
+                <p>
+                    <a href="jogo.html" title="Jogar" class="btn">Jogar</a>
+                </p>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="personagens" data-aos="fade-up">
+    <div class="container">
+        <h1>Personagens</h1>
+        <div class="flex">
+            <div class="col">
+                <div class="jogador">
+                <img src="images/Jogador.png" alt="Jogador">
+                <p>
+                    <strong>Rei</strong><br>
+                </p>
+            </div>
+            </div>
+            <div class="col">
+                <div class="porco">
+                <img src="images/Porco_Patrulheiro.png" alt="Porco Patrulheiro">
+                <p>
+                    <strong>Porco</strong><br>
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="historia" data-aos="fade-up">
+    <div class="container">
+        <h1>História</h1>
+        <div class="flex">
+            <div class="col">
+                <p>
+                    A mil anos atrás, em um reino muito distante, uma bruxa se apaixonou
+                    por um rei e por esses mil anos tentou conquistá-lo. Porém, ao se 
+                    cansar dessas tentativas de ganhar seu coração, a bruxa com muita raiva,
+                    jogou uma praga em toda a população, pois era o que o rei mais amava.
+                    Ela os transformou em bichos selvagens e matadores, e apenas o soberano
+                    continuou humano, para que ele visse toda tristeza e maldade de sua vingança. 
+                    Agora, ele precisará encontrar a poção que salvará o povo dessa maldição,
+                    passando por obstáculos, desafios, e o próprio povo contra ele.
+                </p>
+                </div>
+    </div>
+</section>
+
+<section class="contato" data-aos="fade-up">
+    <h1>entre em contato</h1>
+    <p>
+        <strong>Meu E-mail:</strong> eduardonovacki01@gmail.com
+    </p>
+    <p>
+        <strong>Meu endereço:</strong> Rua Candido Holtz Vieira 101 Jardim Nossa Senhora Aparecida, Campo Mourão - PR
+    </p>
+    <p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.417569309636!2d-52.363586225493236!3d-24.016335878489947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed0b2cab97e655%3A0xa6db2726fa58e098!2sR.%20C%C3%A2ndido%20Holtz%20Vi%C3%AAira%20-%20Jardim%20Isabel%2C%20Campo%20Mour%C3%A3o%20-%20PR%2C%2087309-250!5e0!3m2!1spt-BR!2sbr!4v1742513200120!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+</section>
+</main>
+
+<footer class="footer" data-aos="fade-down">
+    <div class="container">
+        <img src="images/Jogador_Logo.png" alt="Jogador_Logo">
+        <p>
+            Todos os direitos reservados - Desenvolvido por Eduardo Novacki dos Anjos
+        </p>
+        <hr>
+    </div>
+</footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarMenu() {
+            $(".header-nav").toggle();
+        }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

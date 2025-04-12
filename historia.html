@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha dos Porcos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/Jogador_Logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" title="Home"
+            class="header-logo">
+                <img src="images/Jogador_Logo.png" alt="Jogador_Logo">
+            </a>
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="personagens.html" title="Personagens">Personagens</a>
+                    </li>
+                    <li>
+                        <a href="historia.html" title="Historia">História</a>
+                    </li>
+                    <li class="desktop">
+                        <a href="jogo.html" title="Jogo">Jogo</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<section class="historia" data-aos="fade-up">
+    <div class="container">
+        <h1>História</h1>
+        <div class="flex">
+            <div class="col">
+                <p>
+                    A mil anos atrás, em um reino muito distante, uma bruxa se apaixonou
+                    por um rei e por esses mil anos tentou conquistá-lo. Porém, ao se 
+                    cansar dessas tentativas de ganhar seu coração, a bruxa com muita raiva,
+                    jogou uma praga em toda a população, pois era o que o rei mais amava.
+                    Ela os transformou em bichos selvagens e matadores, e apenas o soberano
+                    continuou humano, para que ele visse toda tristeza e maldade de sua vingança. 
+                    Agora, ele precisará encontrar a poção que salvará o povo dessa maldição,
+                    passando por obstáculos, desafios, e o próprio povo contra ele.
+                </p>
+                </div>
+    </div>
+</section>
+
+
+<footer class="footer" data-aos="fade-down">
+    <div class="container">
+        <img src="images/Jogador_Logo.png" alt="Jogador_Logo">
+        <p>
+            Todos os direitos reservados - Desenvolvido por Eduardo Novacki dos Anjos
+        </p>
+        <hr>
+    </div>
+</footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarMenu() {
+            $(".header-nav").toggle();
+        }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
